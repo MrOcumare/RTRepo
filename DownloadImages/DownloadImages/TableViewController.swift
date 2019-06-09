@@ -19,8 +19,10 @@ class TableViewController: UITableViewController {
     
     @IBOutlet weak var AddButton: UIBarButtonItem!
     @IBAction func AddNewImage(_ sender: Any) {
-        self.AddButton.isEnabled = false
+        
+        AddButton.isEnabled = false
         downloadImage(with: inmageURL)
+      
         
         
         
@@ -85,7 +87,7 @@ class TableViewController: UITableViewController {
                 print(error!)
                 return
             }
-            self.isAnimationEnabled = false;
+            
             DispatchQueue.main.async {
                 self.saveNewDats(addData: data!)
                 self.tableView.reloadData()
@@ -93,8 +95,9 @@ class TableViewController: UITableViewController {
                 self.navigationController?.navigationBar.barTintColor = DetermImageColor(at: data!)
             }
             }.resume()
+        
             self.AddButton.isEnabled = true
-            self.isAnimationEnabled = true;
+        
         
         
     }
