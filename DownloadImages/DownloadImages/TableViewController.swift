@@ -44,7 +44,6 @@ class TableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
         
@@ -133,6 +132,8 @@ class TableViewController: UITableViewController {
                 dvc.sendData = "Size: \(String(Double(sendval.sizeImage / 1000))) KB"
                 dvc.sendDate = sendval.addDates!
                 dvc.sendNameImage = sendval.nameImage!
+                
+                
                 
             }
         }
