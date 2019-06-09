@@ -16,6 +16,7 @@
 		CF99770522AC2322007AD1C9 /* MoreInformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF99770422AC2322007AD1C9 /* MoreInformationViewController.swift */; };
 		CF99770722AC2343007AD1C9 /* BigImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF99770622AC2343007AD1C9 /* BigImageViewController.swift */; };
 		CFAE680322AD262100E06B7C /* Logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CFAE680222AD262000E06B7C /* Logo.jpg */; };
+		CFAE680522AD526300E06B7C /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAE680422AD526300E06B7C /* Utils.swift */; };
 		CFBBAD9922ABDBE600DF988D /* MyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBBAD9822ABDBE600DF988D /* MyTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
@@ -31,6 +32,7 @@
 		CF99770422AC2322007AD1C9 /* MoreInformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreInformationViewController.swift; sourceTree = "<group>"; };
 		CF99770622AC2343007AD1C9 /* BigImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigImageViewController.swift; sourceTree = "<group>"; };
 		CFAE680222AD262000E06B7C /* Logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Logo.jpg; path = ../../../../../.Trash/Logo.jpg; sourceTree = "<group>"; };
+		CFAE680422AD526300E06B7C /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		CFBBAD9822ABDBE600DF988D /* MyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -70,6 +72,7 @@
 				CF99770422AC2322007AD1C9 /* MoreInformationViewController.swift */,
 				CFBBAD9822ABDBE600DF988D /* MyTableViewCell.swift */,
 				CF31A0B222AB12DA0046B888 /* TableViewController.swift */,
+				CFAE680422AD526300E06B7C /* Utils.swift */,
 				CF0E395222A865FD00566941 /* Assets.xcassets */,
 				CF0E395422A865FD00566941 /* LaunchScreen.storyboard */,
 				CF0E395722A865FD00566941 /* Info.plist */,
@@ -154,6 +157,7 @@
 				CF99770722AC2343007AD1C9 /* BigImageViewController.swift in Sources */,
 				CF99770522AC2322007AD1C9 /* MoreInformationViewController.swift in Sources */,
 				CF0E395122A865FB00566941 /* DownloadImages.xcdatamodeld in Sources */,
+				CFAE680522AD526300E06B7C /* Utils.swift in Sources */,
 				CF0E394922A865FB00566941 /* AppDelegate.swift in Sources */,
 				CFBBAD9922ABDBE600DF988D /* MyTableViewCell.swift in Sources */,
 				CF31A0B322AB12DA0046B888 /* TableViewController.swift in Sources */,

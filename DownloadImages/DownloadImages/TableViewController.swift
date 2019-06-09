@@ -90,6 +90,7 @@ class TableViewController: UITableViewController {
                 self.saveNewDats(addData: data!)
                 self.tableView.reloadData()
                 self.scrollToBottom()
+                self.navigationController?.navigationBar.barTintColor = DetermImageColor(at: data!)
             }
             }.resume()
             self.AddButton.isEnabled = true
