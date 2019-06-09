@@ -14,7 +14,7 @@ class TableViewController: UITableViewController {
     let inmageURL = URL(string: "https://source.unsplash.com/random")!
     
    
-    
+    var isAnimationEnabled: Bool = true
     var ArrayOfImages : [DownloadedImage] = []
     
     @IBOutlet weak var AddButton: UIBarButtonItem!
@@ -85,15 +85,16 @@ class TableViewController: UITableViewController {
                 print(error!)
                 return
             }
-            
+            self.isAnimationEnabled = false;
             DispatchQueue.main.async {
                 self.saveNewDats(addData: data!)
                 self.tableView.reloadData()
-                self.scrollToBottom()
+                self.scrollToButtom()
                 self.navigationController?.navigationBar.barTintColor = DetermImageColor(at: data!)
             }
             }.resume()
             self.AddButton.isEnabled = true
+            self.isAnimationEnabled = true;
         
         
     }
@@ -187,7 +188,7 @@ class TableViewController: UITableViewController {
         return action
     }
     
-    func scrollToBottom(){
+    func scrollToButtom(){
         DispatchQueue.main.async {
             let indexPath = IndexPath(row: self.ArrayOfImages.count-1, section: 0)
             self.tableView.scrollToRow(at: indexPath, at: .bottom, animated: true)
@@ -216,6 +217,18 @@ class TableViewController: UITableViewController {
         return action
     }
     
+    
+    override func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        let rotationTransformAnimation = CATransform3DTranslate(CATransform3DIdentity, 45, 5, 0)
+        cell.layer.transform = rotationTransformAnimation
+        if self.isAnimationEnabled {
+            UIView.animate(withDuration: 0.5) {
+                cell.layer.transform = CATransform3DIdentity
+            }
+        }
+       
+        
+    }
     
     /*
      // Override to support rearranging the table view.
