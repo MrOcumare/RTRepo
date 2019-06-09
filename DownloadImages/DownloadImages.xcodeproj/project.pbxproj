@@ -15,6 +15,7 @@
 		CF31A0B322AB12DA0046B888 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF31A0B222AB12DA0046B888 /* TableViewController.swift */; };
 		CF99770522AC2322007AD1C9 /* MoreInformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF99770422AC2322007AD1C9 /* MoreInformationViewController.swift */; };
 		CF99770722AC2343007AD1C9 /* BigImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF99770622AC2343007AD1C9 /* BigImageViewController.swift */; };
+		CFAE680122AD23E200E06B7C /* Logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CFAE680022AD23E200E06B7C /* Logo.jpg */; };
 		CFBBAD9922ABDBE600DF988D /* MyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBBAD9822ABDBE600DF988D /* MyTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +30,7 @@
 		CF31A0B222AB12DA0046B888 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		CF99770422AC2322007AD1C9 /* MoreInformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreInformationViewController.swift; sourceTree = "<group>"; };
 		CF99770622AC2343007AD1C9 /* BigImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigImageViewController.swift; sourceTree = "<group>"; };
+		CFAE680022AD23E200E06B7C /* Logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Logo.jpg; path = ../../../../../Downloads/Logo.jpg; sourceTree = "<group>"; };
 		CFBBAD9822ABDBE600DF988D /* MyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -71,6 +73,7 @@
 				CF0E395222A865FD00566941 /* Assets.xcassets */,
 				CF0E395422A865FD00566941 /* LaunchScreen.storyboard */,
 				CF0E395722A865FD00566941 /* Info.plist */,
+				CFAE680022AD23E200E06B7C /* Logo.jpg */,
 				CF0E394F22A865FB00566941 /* DownloadImages.xcdatamodeld */,
 			);
 			path = DownloadImages;
@@ -137,6 +140,7 @@
 				CF0E395622A865FD00566941 /* LaunchScreen.storyboard in Resources */,
 				CF0E395322A865FD00566941 /* Assets.xcassets in Resources */,
 				CF0E394E22A865FB00566941 /* Main.storyboard in Resources */,
+				CFAE680122AD23E200E06B7C /* Logo.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
