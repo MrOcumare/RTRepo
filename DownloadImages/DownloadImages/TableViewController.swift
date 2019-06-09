@@ -13,16 +13,16 @@ class TableViewController: UITableViewController {
     
     let inmageURL = URL(string: "https://source.unsplash.com/random")!
     
-    var IRFD = true
+   
     
     var ArrayOfImages : [DownloadedImage] = []
     
+    @IBOutlet weak var AddButton: UIBarButtonItem!
     @IBAction func AddNewImage(_ sender: Any) {
-        if IRFD {
-            
-            downloadImage(with: inmageURL)
-            
-        }
+        self.AddButton.isEnabled = false
+        downloadImage(with: inmageURL)
+        
+        
         
         
     }
@@ -80,18 +80,19 @@ class TableViewController: UITableViewController {
     }
     
     func downloadImage(with url: URL) {
-        
         URLSession.shared.dataTask(with: inmageURL) { (data, response, error) in
-            
             if error != nil {
                 print(error!)
                 return
             }
+            
             DispatchQueue.main.async {
                 self.saveNewDats(addData: data!)
                 self.tableView.reloadData()
+                self.scrollToBottom()
             }
             }.resume()
+            self.AddButton.isEnabled = true
         
         
     }
@@ -132,9 +133,7 @@ class TableViewController: UITableViewController {
                 dvc.sendData = "Size: \(String(Double(sendval.sizeImage / 1000))) KB"
                 dvc.sendDate = sendval.addDates!
                 dvc.sendNameImage = sendval.nameImage!
-                
-                
-                
+        
             }
         }
     }
@@ -187,8 +186,15 @@ class TableViewController: UITableViewController {
         return action
     }
     
+    func scrollToBottom(){
+        DispatchQueue.main.async {
+            let indexPath = IndexPath(row: self.ArrayOfImages.count-1, section: 0)
+            self.tableView.scrollToRow(at: indexPath, at: .bottom, animated: true)
+        }
+    }
+    
     func deleteAction(at indexPath: IndexPath) -> UIContextualAction {
-        let action = UIContextualAction(style: .normal, title: "Delet") { (action, view, complition) in
+        let action = UIContextualAction(style: .normal, title: "Delete") { (action, view, complition) in
             let appDelagate = UIApplication.shared.delegate as! AppDelegate
             let context = appDelagate.persistentContainer.viewContext
             
