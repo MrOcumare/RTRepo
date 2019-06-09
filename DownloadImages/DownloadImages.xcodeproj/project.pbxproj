@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		CF0E394922A865FB00566941 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF0E394822A865FB00566941 /* AppDelegate.swift */; };
-		CF0E394B22A865FB00566941 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF0E394A22A865FB00566941 /* ViewController.swift */; };
 		CF0E394E22A865FB00566941 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF0E394C22A865FB00566941 /* Main.storyboard */; };
 		CF0E395122A865FB00566941 /* DownloadImages.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CF0E394F22A865FB00566941 /* DownloadImages.xcdatamodeld */; };
 		CF0E395322A865FD00566941 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF0E395222A865FD00566941 /* Assets.xcassets */; };
@@ -22,7 +21,6 @@
 /* Begin PBXFileReference section */
 		CF0E394522A865FB00566941 /* DownloadImages.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DownloadImages.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF0E394822A865FB00566941 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CF0E394A22A865FB00566941 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CF0E394D22A865FB00566941 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CF0E395022A865FB00566941 /* DownloadImages.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DownloadImages.xcdatamodel; sourceTree = "<group>"; };
 		CF0E395222A865FD00566941 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -65,7 +63,6 @@
 			isa = PBXGroup;
 			children = (
 				CF0E394822A865FB00566941 /* AppDelegate.swift */,
-				CF0E394A22A865FB00566941 /* ViewController.swift */,
 				CF0E394C22A865FB00566941 /* Main.storyboard */,
 				CF99770622AC2343007AD1C9 /* BigImageViewController.swift */,
 				CF99770422AC2322007AD1C9 /* MoreInformationViewController.swift */,
@@ -153,7 +150,6 @@
 				CF99770722AC2343007AD1C9 /* BigImageViewController.swift in Sources */,
 				CF99770522AC2322007AD1C9 /* MoreInformationViewController.swift in Sources */,
 				CF0E395122A865FB00566941 /* DownloadImages.xcdatamodeld in Sources */,
-				CF0E394B22A865FB00566941 /* ViewController.swift in Sources */,
 				CF0E394922A865FB00566941 /* AppDelegate.swift in Sources */,
 				CFBBAD9922ABDBE600DF988D /* MyTableViewCell.swift in Sources */,
 				CF31A0B322AB12DA0046B888 /* TableViewController.swift in Sources */,
